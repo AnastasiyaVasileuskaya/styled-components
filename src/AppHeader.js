@@ -12,4 +12,8 @@ export default function AppHeader({ title, subtitle }) {
 const Header = styled.header`
   background-color: white;
   color: royalblue;
+
+  h2 {
+    ${(props) => (props.isVisible ? '' : 'display: none;')}
+  }
 `
